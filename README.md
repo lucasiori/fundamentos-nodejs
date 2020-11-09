@@ -32,7 +32,7 @@
 
 <p>
   Primeiramente, clone o repositório na sua máquina local: <br />
-  <code>git clone https://github.com/lucasiori/conceitos-nodejs</code>
+  <code>git clone https://github.com/lucasiori/fundamentos-nodejs</code>
 </p>
 
 <p>
@@ -55,11 +55,11 @@
   <ul>
     <li>
       <strong>se estiver utilizando NPM: </strong>
-      <code>npm dev</code>
+      <code>npm run dev:server</code>
     </li>
     <li>
       <strong>se estiver utilizando Yarn: </strong>
-      <code>yarn dev</code>
+      <code>yarn dev:server</code>
     </li>
   </ul>
 </p>
@@ -72,7 +72,32 @@
 
 <p>
   <strong>Rota:</strong> /transactions <br />
-  <strong>Descrição:</strong> Retorna a lista de transações cadastradas. <br />
+  <strong>Descrição:</strong> Retorna a lista de transações cadastradas e o balanço atual. <br />
+  <pre>
+    {
+      transactions: [
+        {
+          title: "Salario",
+          type: "income",
+          value: "1800,00"
+        },
+        {
+          title: "Horas Extras",
+          type: "income",
+          value: "600,00"
+        },{
+          title: "Faculdade",
+          type: "outcome",
+          value: "620,00"
+        }
+      ],
+      balance: {
+        income: "2400,00",
+        outcome: "620,00",
+        total: "1780,00"
+      }
+    }
+  </pre>
 </p>
 
 <br />
